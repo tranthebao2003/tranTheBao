@@ -1,0 +1,358 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "#9Slide03 Montserrat";
+    font-size: 22px;
+}
+
+.container{
+    position: relative;
+    width: 100vw; /* 100 view width (100 khung nhìn màn hình theo chìu rộng) */
+    height: 100vh;  /* 100 view height (100 khung nhìn màn hình theo chìu ngang) */
+}
+
+img{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    width: 100vw;
+    height: 100vh;
+}
+
+#background{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1C1B1B;
+    z-index: -2;
+}
+
+.frist{ /* flexBox của ảnh thẻ và giới thiệu */
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background: #1F5E5E;
+    border-radius: 128px 20px 20px 128px;
+    top:45px;
+    right: 45px;
+    left: 45px;
+    z-index: 3;
+}
+
+
+#anhThe{
+    position: relative; /* dựa vào vị trí tĩnh của nó so với cha */
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-image: url("ảnh thẻ.jpg");
+    background-size: cover;
+}
+
+#gioiThieu{
+   position: relative;
+   text-align: left;
+   padding: 10px;
+   width: 542px;
+   height: auto;
+   color: #FFFFFF;
+   background-color: #468686;
+   border-radius: 20px;
+}
+
+.second{
+    position: absolute;
+    left: 45px;
+    top: 150px;
+    height: 80vh; 
+    width: 406px;
+    background-color: #1F5E5E;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#ten{
+    position: relative; /* dựa vào vị trí tĩnh của nó so với cha */
+    top: 22px;
+    width: 550px;
+    height: 258px;
+    
+    text-indent: 25px; /* thụt đầu dòng 25px */
+    line-height: 350px; 
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFFFFF;
+    
+    border-radius: 0px 0px 140px 0px;
+    background-color: #468686;
+}
+
+.khung{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#gmail{
+    position: relative;
+    top: 110px;
+    width: 80px;
+    height: 80px;
+    background-color: #122020;
+    border-radius: 0 20px 20px 0;
+    
+    background-image: url("Asset 3.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    transition: 0.7s;
+}
+
+#gmail:hover{
+    border: 6px dashed #53C5BD;
+    width: 100px;
+}
+
+#face{
+    position: relative;
+    top: 110px;
+    width: 80px;
+    height: 80px;
+    background-color: #122020;
+    border-radius: 20px; 
+    
+    background-image: url("Asset 1.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    transition: 0.7s;
+}
+
+#face:hover{
+    border: 6px dashed #53C5BD;
+    transform: rotate(45deg);
+}
+
+#zalo{
+    position: relative;
+    top: 110px;
+    width: 80px;
+    height: 80px;
+    background-color: #122020;
+    border-radius: 20px 0 0 20px; 
+    
+    background-image: url("Asset 5.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    transition: 0.7s;
+}
+
+#zalo:hover{
+    border: 6px dashed #53C5BD;
+    width: 100px;
+}
+
+.third{
+    position: absolute;
+    top: 370px;
+    right: 45px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#kiNang{
+    position: relative;
+    width: 562px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #2A7F7F;
+    
+    line-height: 60px;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.khung2{
+    position: relative;
+    top: -50px;
+    margin: 0 1px 0 1px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#kVideo{
+    width: 70px;
+    height: 138px;
+    background-color: #1F5E5E;
+    border-radius: 0px 0px 40px 40px;
+}
+
+#kAe{
+    width: 70px;
+    height: 138px;
+    background-color: #1F5E5E;
+    border-radius: 0px 0px 40px 40px; 
+}
+
+#kAi{
+    width: 70px;
+    height: 138px;
+    background: #1F5E5E;
+    border-radius: 0px 0px 40px 40px; 
+}
+
+#kFigma{
+    width: 70px;
+    height: 138px;
+    background: #1F5E5E;
+    border-radius: 0px 0px 40px 40px; 
+}
+
+.mucKiNang{
+    position: relative;
+    top: -120px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+#video{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url("videoscribe-icon-300x300.png");
+    background-size: cover;
+    
+    transition: 0.6s;
+    
+}
+
+#video:hover{
+    transform: rotate(45deg);
+}
+
+#ae{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url("Adobe_After_Effects_CC_icon.svg.png");
+    background-size: cover;
+    
+    transition: 0.6s;
+}
+
+#ae:hover{
+    transform: rotate(45deg);
+}
+
+#ai{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url("Adobe_Illustrator_CC_icon.svg.png");
+    background-size: cover;
+    
+    transition: 0.6s;
+}
+
+#ai:hover{
+    transform: rotate(45deg);
+}
+
+#figma{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url("Screenshot_2022-12-27_at_5.19.27_PM_h2ncza.png");
+    background-size: cover;
+    
+    transition: 0.6s;
+}
+
+#figma:hover{
+    transform: rotate(45deg);
+}
+
+.four{
+    position: absolute;
+    top: 560px;
+    right: 45px;
+}
+
+.four a { /* chọn all thẻ a trong class four */
+    text-decoration: none;
+}
+
+#line1{
+    margin-bottom: 20px;
+    position: relative;
+    width: 562px;
+    height: 40px;
+    background-color: #2A7F7F;
+    border-radius: 20px 0px 0px 20px;   
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-indent: 20px;
+    transition: 0.7s;
+}
+
+#line1:hover{
+    background-color: #145151;
+    transform: translateX(-50px);
+}
+
+#line2{
+    position: relative;
+    margin-bottom: 20px;
+    width: 392px;
+    height: 40px;
+    right: -170px;
+    background-color: #2A7F7F;
+    border-radius: 20px 0px 0px 20px;  
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+#line3{
+    
+    position: relative;
+    width: 392px;
+    height: 40px;
+    right: -170px;
+    background-color: #2A7F7F;
+    border-radius: 20px 0px 0px 20px;  
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-indent: 18px;
+    transition: 0.7s;
+}
+
+#line3:hover{
+    background-color: #145151;
+    transform: translateX(-50px);
+}
